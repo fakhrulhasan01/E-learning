@@ -1,0 +1,29 @@
+﻿/* Juiz DropDown Menu demo	*/
+/* by Geoffrey Crofte 		*/
+/* CreativeCommons Licence 	*/
+/* www.creativejuiz.fr 		*/
+
+.back a {
+	display: block;
+	background: #4D9EB4;
+	width: 185px;
+	margin: 45px auto 20px auto;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	text-decoration :none;
+	text-shadow: -1px -1px 0 #328197;
+	clear: both;
+	-webkit-border-radius: 20px 0 20px 20px;
+	-moz-border-radius: 20px 0 20px 20px;
+	border-radius: 20px 0 20px 20px;
+}
+.back a:hover,.back a:focus {
+	text-decoration: underline;
+}
+
+@media (max-width:640px) {
+	body {
+		width: auto;
+	}
+}

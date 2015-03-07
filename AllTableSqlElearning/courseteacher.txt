@@ -1,0 +1,7 @@
+create table courseteacher(
+teacherid int(12) not null,
+courseid int(12) not null,
+primary key(teacherid, courseid),
+foreign key(teacherid) references teacher(id),
+foreign key(courseid) references course(id)
+)

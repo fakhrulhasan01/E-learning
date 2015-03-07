@@ -1,0 +1,10 @@
+create table blog(
+id int(12) not null auto_increment,
+description varchar(40) not null,
+teacher varchar(40) not null,
+student varchar(40) not null,
+teacherid int(12) not null,
+studentid int(12) not null,
+
+primary key(id)
+)

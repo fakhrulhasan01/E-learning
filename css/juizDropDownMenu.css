@@ -1,0 +1,183 @@
+/*
+	Juiz DropDown Menu 
+	Plugin by Geoffrey Crofte
+	http://jq.creativejuiz.fr
+	Free for personal use (cc)
+	
+	More info about license : http://jq.creativejuiz.fr/plugins-jquery/dropdown-menu.php
+*/
+
+
+.juizdropdown {
+	position: relative;
+	height: 43px;
+	padding:0;
+	font-size: 15px;
+	line-height: 42px;
+	text-align: center;
+	background: #dbdbdb url(../../Ecommerce/Ecommerce/img/main.png) repeat-x scroll 0 0;  
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4d4d4),color-stop(1, #e6e6e6));
+	background: -webkit-linear-gradient(center bottom , #d4d4d4 0%, #e6e6e6 100%) repeat scroll 0 0 #dbdbdb;  
+	background: -moz-linear-gradient(center bottom , #d4d4d4 0%, #e6e6e6 100%) repeat scroll 0 0 #dbdbdb;  
+	border: 1px solid #c0c0c0;
+	text-transform: uppercase;
+	
+	-webkit-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-moz-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-ms-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	-o-box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset, 0 0 1px #fff inset;
+	box-shadow: 0 0 1px #fff inset, 0 0 1px #fff inset;
+	
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	border-radius: 16px;
+	
+}
+.juizdropdown li {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	background: transparent url(../../Ecommerce/Ecommerce/img/separator.png) scroll left center no-repeat;
+}
+.juizdropdown li.first { background: none; }
+.juizdropdown a {
+	display: inline-block;
+	padding: 0 20px 0 22px;
+	color: #6D6D6D;
+	border: 0 none;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #fff;
+	outline: 0 none;
+}
+.juizdropdown a:focus { text-decoration: underline; }
+
+
+.juizdropdown .juizSub,
+.juizdropdown .juizSubSub {
+	position: absolute;
+	padding:0;
+	display: none;
+	width: 150px;
+	height: auto;
+	background: rgb(212,212,212);
+	background: rgba(212,212,212,0.95);
+	background-image: none;
+	border: 1px solid #c0c0c0;
+	border-top: 0;
+	text-transform: capitalize;
+	
+	-webkit-box-shadow: 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 5px 4px -3px #999;
+	-moz-box-shadow: 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 5px 4px -3px #999;
+	-ms-box-shadow: 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 5px 4px -3px #999;
+	-o-box-shadow: 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 5px 4px -3px #999;
+	box-shadow: 0 -1px 1px #fff inset, 0 -1px 1px #fff inset, 0 5px 4px -3px #999;
+	
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+.juizdropdown .juiSub {
+	top: 41px; left: 0;
+}
+.juizdropdown .juizSub li {
+	position:relative;
+	display: block;
+	padding: 0;
+	width: auto;
+	line-height: 1.3em;
+	text-align: left;
+	background: none;
+}
+.juizdropdown .juizSub a {
+	display: block;
+	width: auto;
+	padding: 0.4em 0.4em;
+	margin: 0 1em;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #bbb;
+	background: transparent url(../../Ecommerce/Ecommerce/img/hover.png) scroll -150px 0px no-repeat;
+	color: .6d6d6d;
+	text-shadow: 1px 1px 0 .fff;
+}
+.juizdropdown .juizSub li.first a { border-top: 0; } 
+.juizdropdown .juizSub li.last a { border-bottom: 0; }
+
+.juizdropdown .juizSubSub {
+	right: -150px; top:0;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.juizdropdown .hasSub > a {
+	background: url(../../Ecommerce/Ecommerce/img/arrow_down.png) 96% 50% no-repeat;
+}
+.juizdropdown li.hasSubSub {
+	background: transparent url(../../Ecommerce/Ecommerce/img/arrow_right.png) 95% 50% no-repeat;
+}
+
+.juizClear { clear: left; height: 0; overflow: hidden; }
+
+@media (max-width:640px) {
+	.juisdropdown .juizSubSub {
+		display:none;
+	}
+	.juizdropdown,
+	.juizdropdown .juizSub,
+	.juizdropdown .juizSub li,
+	.juizdropdown .juizSub li a	{
+		position:static;
+		display: inline-block;
+		width: auto;
+		height:auto;
+		text-align:left;
+	}
+	.juizdropdown {
+		margin: 5px;
+		padding: 12px;
+	}
+	.juizdropdown ul {
+		box-shadow: 0 0 0 !important;
+		background: none !important;
+		border:0 !important;
+		border-radius:0 !important;
+	}
+	.juizdropdown li {
+		background-image: none;
+	}
+	.juizdropdown li a {
+		border:0 !important;
+		padding-left:0;
+	}
+	.juizdropdown .juizSub a {
+		padding: 0;
+		margin: 0;
+	}
+	.juizdropdown .juizSub li + li {
+		padding-left: 12px;
+	}
+	.juizdropdown .juizSub li + li a:before {
+		content: "|";
+		position:relative;
+		left:-8px;
+	}
+	.juizdropdown > li {
+		display: block;
+	}
+	.juizdropdown li.hasSubSub {
+		background:none;
+	}
+	.juizdropdown .hasSub {
+		line-height: 24px;
+	}
+	.juizdropdown li + .hasSub {
+		margin-top: 12px;
+	}
+	.juizdropdown .hasSub > a {
+		background: transparent url(../img/arrow_right.png) 96% 50% no-repeat;
+	}
+}

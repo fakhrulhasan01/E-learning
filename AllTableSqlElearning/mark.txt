@@ -1,0 +1,11 @@
+create table mark(
+id int(12) not null auto_increment,
+questionid int(12) not null,
+teacherid int(12) not null,
+studentid int(12) not null,
+mark float,
+primary key(id),
+foreign key(questionid) references question(id),
+foreign key(teacherid) references teacher(id),
+foreign key(studentid) references student(id)
+)

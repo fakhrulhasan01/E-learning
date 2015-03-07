@@ -1,0 +1,20 @@
+create table student(
+id int(12) not null auto_increment,
+name varchar(40) not null,
+email varchar(60) not null,
+password varchar(60) not null,
+fathername varchar(40) not null,
+mothername varchar(40) not null,
+gender varchar(6) not null,
+country varchar(20) not null,
+address varchar(40) not null,
+joindate date,
+dob date, 
+courseid int(12) not null,
+teacherid int(12) not null,
+picture varchar(40) not null,
+primary key(id),
+unique key(email),
+foreign key(courseid) references course(id),
+foreign key(teacherid) references teacher(id)
+)

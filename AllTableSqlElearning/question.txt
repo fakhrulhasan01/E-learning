@@ -1,0 +1,10 @@
+create table question(
+id int(12) not null auto_increment,
+question varchar(40) not null,
+courseid int(12) not null,
+teacherid int(12) not null,
+
+primary key(id),
+foreign key(courseid) references course(id),
+foreign key(teacherid) references teacher(id)
+)

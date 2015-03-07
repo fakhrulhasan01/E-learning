@@ -1,0 +1,8 @@
+<br />
+<b>Warning</b>:  fopen(files/1379954001779968.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in <b>H:\xampp\htdocs\E-Learninggg\controller\functions.php</b> on line <b>341</b><br />
+<br />
+<b>Warning</b>:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for files/1379954001779968.txt in <b>H:\xampp\htdocs\E-Learninggg\controller\functions.php</b> on line <b>342</b><br />
+<br />
+<b>Warning</b>:  fread() expects parameter 1 to be resource, boolean given in <b>H:\xampp\htdocs\E-Learninggg\controller\functions.php</b> on line <b>342</b><br />
+<br />
+<b>Warning</b>:  fclose() expects parameter 1 to be resource, boolean given in <b>H:\xampp\htdocs\E-Learninggg\controller\functions.php</b> on line <b>343</b><br />

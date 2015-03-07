@@ -1,0 +1,3 @@
+function f_name(parameter){
+Statement
+}

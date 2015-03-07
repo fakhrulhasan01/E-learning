@@ -1,0 +1,9 @@
+create table answer(
+questionid int(12) not null,
+studentid int(12) not null,
+answer varchar(40) not null,
+
+primary key(questionid, studentid),
+foreign key(questionid) references question(id),
+foreign key(studentid) references student(id)
+)

@@ -1,0 +1,15 @@
+create table teacher(
+id int(12) not null auto_increment,
+name varchar(40) not null,
+email varchar(60) not null,
+password varchar(60) not null,
+country varchar(20) not null,
+address varchar(40) not null,
+designationid int(12) not null,
+departmentid int(12) not null,
+picture varchar(40) not null,
+primary key(id),
+unique key(email),
+foreign key(designationid) references designation(id),
+foreign key(departmentid) references department(id)
+)

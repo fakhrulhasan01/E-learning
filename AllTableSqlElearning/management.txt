@@ -1,0 +1,7 @@
+create table management(
+id int(12) not null auto_increment,
+email varchar(60),
+password varchar(60),
+primary key(id),
+unique key(email)
+)

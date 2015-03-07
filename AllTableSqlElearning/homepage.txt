@@ -1,0 +1,6 @@
+create table homepage(
+id int(12) not null auto_increment,
+title varchar(40),
+description varchar(40),
+primary key(id)
+)
